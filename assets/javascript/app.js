@@ -97,3 +97,9 @@ function returnResult() {
     $('#answers-incorrect').text(answerIncorrect);
     $('#answers-unanswered').text(unAnswered);
 }
+
+$('#button-done').on("click", function() {
+    $('#screen-start').hide();
+    $('#screen-main').show();
+    returnResult();
+})
